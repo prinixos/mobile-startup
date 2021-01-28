@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+*{
+   margin: 0;
+   padding: 0;
+}
+
+body{
+   background: url('https://images.unsplash.com/photo-1568750946552-b7f7b1079435?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60') no-repeat;
+   background-size: cover;
+   font-family: 'Poppins', sans-serif;
+}
+
+#wrapper{
+   background: #000;
+   height: 550px;
+   width: 300px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   border-radius: 15px;
+   overflow: hidden;
+}
+
+.relative{
+   position: relative;
+   height: 100%;
+   width: 100%;
+}
+
+#mobile-top{
+   height: 50px;
+   background: rgb(211, 208, 208);
+   width: 100%;
+   position: relative;
+}
+
+#screen{
+   transition: 350ms ease-in-out;
+   height: 440px;
+   width: 100%;
+   background: url('./bryan-goff-360297-unsplash.jpg') no-repeat;
+   background-size: cover;
+   background-position-x: -150px;
+}
+
+#mobile-bottom{
+   height: 60px;
+   background: rgb(211, 208, 208);
+   width: 100%;
+   position: relative;
+}
+
+#start-btn{
+   content: '';
+   position: absolute;
+   height: 20px;
+   width: 20px;
+   border: 1px solid rgb(148, 149, 149);
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   cursor: pointer;
+}
+
+#senser{
+   border-radius: 20px;
+   height: 15px;
+   width: 40%;
+   background: rgb(207, 202, 202);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+
+#senser .relative:after{
+   content: '';
+   position: absolute;
+   height: 10px;
+   width: 10px;
+   background: rgb(66, 65, 65);
+   border-radius: 100%;
+   top: 50%;
+   transform: translateY(-50%)
+}
+
+#senser .relative:before{
+   content: '';
+   position: absolute;
+   height: 3px;
+   width: 70px;
+   background: rgb(66, 65, 65);
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%)
+}
+
+#camera{
+   position: absolute;
+   height: 11px;
+   width: 11px;
+   background: rgb(66, 65, 65);
+   border-radius: 100%;
+   top: 50%;
+   transform: translateY(-50%);
+   right: 6%;
+}
+
+#time{
+   width: 180px;
+   color: #fff;
+   position: absolute;
+   left: 50%;
+   top: 20%;
+   transform: translate(-50%,-10%);
+   transition: 700ms ease-in-out;
+   transition-delay: 350ms ;
+}
+
+#time-text{
+   font-size: 45px;
+   text-shadow: 0 1px 3px rgba(0,0,0,.5);
+   font-weight: 150;
+   text-align: center;
+   word-spacing: -4px;
+}
+
+#date{
+   font-weight: 200;
+   font-size: 20px;
+   margin-top: -10px;
+   text-align: center;
+   word-spacing: 3px;
+}
+
+#th{
+   font-size: 18px;
+   margin-left: -3px;
+}
+
+#ap{
+   font-size: 20px;
+}
+
+#time-text span{
+   display: inline;
+}
